@@ -24,3 +24,17 @@ Run the small illustrative tests from the repository root:
 ```sh
 python -m unittest discover -s tests -v
 ```
+
+## Trace explorer
+
+`web/` contains a small local browser UI for exploring the markers: every
+Item's record, each file and line where it is tagged, inferred relationships
+(test case to requirement, subsystem, mentions), the mass budget, and the unit
+tests. It uses only the Python standard library and parses the example files
+without executing them:
+
+```sh
+python web/server.py
+```
+
+Then open http://127.0.0.1:8765. Use **Rescan** after editing files.

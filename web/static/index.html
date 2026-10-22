@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FOREST-3 Trace Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>FOREST-3 <span class="brand-sub">Trace explorer</span></span>
+      </a>
+      <nav class="tabs" aria-label="Sections">
+        <a href="#/" data-tab="overview">Overview</a>
+        <a href="#/items" data-tab="items">Items</a>
+        <a href="#/code" data-tab="code">Code</a>
+        <a href="#/tests" data-tab="tests">Tests</a>
+      </nav>
+      <button class="ghost" id="rescan" type="button" title="Rescan the repository">Rescan</button>
+    </header>
+    <main id="app" aria-live="polite">
+      <p class="loading">Scanning repository…</p>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
